@@ -25,6 +25,7 @@ public class EmployeeController {
 
     @PostMapping
     public Employee addEmployee(@Valid @RequestBody Employee employee) {
+        employee.setId(null);
         return service.saveEmployee(employee);
     }
 
