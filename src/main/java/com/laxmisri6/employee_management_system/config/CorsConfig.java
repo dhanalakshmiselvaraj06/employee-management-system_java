@@ -14,15 +14,13 @@ public class CorsConfig {
 
         CorsConfiguration config = new CorsConfiguration();
 
-        config.addAllowedOrigin("http://localhost:5173");
-
-        config.addAllowedOrigin(
-                "https://employee-management-frontend-react.vercel.app/"
-        );
+        config.addAllowedOriginPattern("*");
 
         config.addAllowedHeader("*");
 
         config.addAllowedMethod("*");
+
+        config.setAllowCredentials(true);
 
         UrlBasedCorsConfigurationSource source =
                 new UrlBasedCorsConfigurationSource();
