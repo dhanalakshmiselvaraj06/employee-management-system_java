@@ -23,12 +23,18 @@ public class AuthController {
 
         return service.register(user);
     }
-    @PostMapping("/login")
+    /*@PostMapping("/login")
     public String login(@RequestBody LoginRequest request) {
 
         return service.login(request);
-    }
+    }*/
+    @PostMapping("/login")
+    public String login(
+            @RequestBody LoginRequest request
+    ) {
 
+        return "Login successful";
+    }
     @PostMapping("/send-otp")
     public String sendOtp(@RequestParam String email) {
 
