@@ -28,6 +28,7 @@ public class AuthController {
 
         return service.login(request);
     }
+
     @PostMapping("/send-otp")
     public String sendOtp(@RequestParam String email) {
 
