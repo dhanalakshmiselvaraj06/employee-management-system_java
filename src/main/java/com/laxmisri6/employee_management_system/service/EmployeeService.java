@@ -20,6 +20,7 @@ public class EmployeeService {
     }
 
     public Employee saveEmployee(Employee employee) {
+        employee.setId(null);
         return repository.save(employee);
     }
     public Employee updateEmployee(Long id, Employee updatedEmployee) {
