@@ -17,7 +17,7 @@ public class CorsConfig {
         config.addAllowedOrigin("http://localhost:5173");
 
         config.addAllowedOrigin(
-                "https://employee-management-frontend-react-6vptnm18q.vercel.app"
+                "https://employee-management-frontend-react.vercel.app/"
         );
 
         config.addAllowedHeader("*");
